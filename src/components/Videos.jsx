@@ -2,11 +2,13 @@ import { Stack, Box } from "@mui/system";
 
 import VideoCard from "./VideoCard";
 import ChannelCard from "./ChannelCard";
+import Loader from "./Loader";
 
 
 
 const  Videos = ({ videos }) => {
   // console.log(videos);
+  if(!videos?.length) return <Loader />;
   return (
     <Stack direction = 'row' flexWrap="wrap"
     justifyContent='start' gap={2} >
