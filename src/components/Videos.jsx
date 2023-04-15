@@ -4,8 +4,6 @@ import VideoCard from "./VideoCard";
 import ChannelCard from "./ChannelCard";
 import Loader from "./Loader";
 
-
-
 const  Videos = ({ videos }) => {
   // console.log(videos);
   if(!videos?.length) return <Loader />;
@@ -21,7 +19,6 @@ const  Videos = ({ videos }) => {
         </Box>
       )   
       )}
-
 
 
     </Stack>
