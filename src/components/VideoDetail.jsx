@@ -8,8 +8,8 @@ import { Videos, Loader } from "./";
 import { fetchFromAPI } from "../utils/fetchFromAPI";
 
 const VideoDetail = () => {
-  const [videoDetail, setVideoDetail] = useState([]);
-  const [videos, setVideos] = useState([]);
+  const [videoDetail, setVideoDetail] = useState(null);
+  const [videos, setVideos] = useState(null);
   const { id } = useParams();
 
   useEffect(() => {
